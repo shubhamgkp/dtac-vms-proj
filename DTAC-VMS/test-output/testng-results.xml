@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14747" started-at="2019-04-02T06:00:30Z" finished-at="2019-04-02T06:00:45Z">
+  <suite name="Default suite" duration-ms="28261" started-at="2019-04-03T11:36:00Z" finished-at="2019-04-03T11:36:28Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14747" started-at="2019-04-02T06:00:30Z" finished-at="2019-04-02T06:00:45Z">
-      <class name="com.qa.datc.testscript.Search">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.qa.datc.testscript.Search@3701eaf6]" name="init" is-config="true" duration-ms="301" started-at="2019-04-02T11:30:30Z" finished-at="2019-04-02T11:30:30Z">
+    <test name="Default test" duration-ms="28261" started-at="2019-04-03T11:36:00Z" finished-at="2019-04-03T11:36:28Z">
+      <class name="com.qa.datc.testscript.CreateGroupRoleTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.qa.datc.testscript.CreateGroupRoleTest@610694f1]" name="init" is-config="true" duration-ms="321" started-at="2019-04-03T17:05:59Z" finished-at="2019-04-03T17:06:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="initGlobalVar()[pri:0, instance:com.qa.datc.testscript.Search@3701eaf6]" name="initGlobalVar" is-config="true" duration-ms="1" started-at="2019-04-02T11:30:30Z" finished-at="2019-04-02T11:30:30Z">
+        <test-method status="PASS" signature="initGlobalVar()[pri:0, instance:com.qa.datc.testscript.CreateGroupRoleTest@610694f1]" name="initGlobalVar" is-config="true" duration-ms="1" started-at="2019-04-03T17:06:00Z" finished-at="2019-04-03T17:06:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initGlobalVar -->
-        <test-method status="PASS" signature="initApplication(java.lang.String)[pri:0, instance:com.qa.datc.testscript.Search@3701eaf6]" name="initApplication" is-config="true" duration-ms="4655" started-at="2019-04-02T11:30:30Z" finished-at="2019-04-02T11:30:35Z">
+        <test-method status="PASS" signature="initApplication(java.lang.String)[pri:0, instance:com.qa.datc.testscript.CreateGroupRoleTest@610694f1]" name="initApplication" is-config="true" duration-ms="4513" started-at="2019-04-03T17:06:00Z" finished-at="2019-04-03T17:06:04Z">
           <params>
             <param index="0">
               <value>
@@ -26,31 +26,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initApplication -->
-        <test-method status="PASS" signature="preCondtion(java.lang.reflect.Method)[pri:0, instance:com.qa.datc.testscript.Search@3701eaf6]" name="preCondtion" is-config="true" duration-ms="2471" started-at="2019-04-02T11:30:35Z" finished-at="2019-04-02T11:30:37Z">
+        <test-method status="PASS" signature="preCondtion(java.lang.reflect.Method)[pri:0, instance:com.qa.datc.testscript.CreateGroupRoleTest@610694f1]" name="preCondtion" is-config="true" duration-ms="2624" started-at="2019-04-03T17:06:04Z" finished-at="2019-04-03T17:06:07Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.qa.datc.testscript.Search.searchRole() throws java.lang.InterruptedException]]>
+                <![CDATA[public void com.qa.datc.testscript.CreateGroupRoleTest.testgrouprole() throws java.lang.InterruptedException,java.sql.SQLException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preCondtion -->
-        <test-method status="FAIL" signature="searchRole()[pri:0, instance:com.qa.datc.testscript.Search@3701eaf6]" name="searchRole" duration-ms="4400" started-at="2019-04-02T11:30:37Z" finished-at="2019-04-02T11:30:41Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="FAIL" signature="testgrouprole()[pri:0, instance:com.qa.datc.testscript.CreateGroupRoleTest@610694f1]" name="testgrouprole" duration-ms="18558" started-at="2019-04-03T17:06:07Z" finished-at="2019-04-03T17:06:25Z">
+          <exception class="org.postgresql.util.PSQLException">
             <message>
-              <![CDATA[expected [Role Type Name] but found [Role Type Code]]]>
+              <![CDATA[The column name group_role_nam was not found in this ResultSet.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Role Type Name] but found [Role Type Code]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:189)
-	at org.testng.Assert.assertEquals(Assert.java:199)
-	at com.qa.datc.testscript.Search.searchRole(Search.java:34)
+              <![CDATA[org.postgresql.util.PSQLException: The column name group_role_nam was not found in this ResultSet.
+	at org.postgresql.jdbc.PgResultSet.findColumn(PgResultSet.java:2593)
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2467)
+	at com.qa.datc.testscript.CreateGroupRoleTest.testgrouprole(CreateGroupRoleTest.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -78,30 +74,30 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.postgresql.util.PSQLException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchRole -->
-        <test-method status="PASS" signature="postCondition(org.testng.ITestResult)[pri:0, instance:com.qa.datc.testscript.Search@3701eaf6]" name="postCondition" is-config="true" duration-ms="424" started-at="2019-04-02T11:30:42Z" finished-at="2019-04-02T11:30:42Z">
+        </test-method> <!-- testgrouprole -->
+        <test-method status="PASS" signature="postCondition(org.testng.ITestResult)[pri:0, instance:com.qa.datc.testscript.CreateGroupRoleTest@610694f1]" name="postCondition" is-config="true" duration-ms="391" started-at="2019-04-03T17:06:25Z" finished-at="2019-04-03T17:06:26Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=searchRole status=FAILURE method=Search.searchRole()[pri:0, instance:com.qa.datc.testscript.Search@3701eaf6] output={null}]]]>
+                <![CDATA[[TestResult name=testgrouprole status=FAILURE method=CreateGroupRoleTest.testgrouprole()[pri:0, instance:com.qa.datc.testscript.CreateGroupRoleTest@610694f1] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
-        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.qa.datc.testscript.Search@3701eaf6]" name="closeApplication" is-config="true" duration-ms="2321" started-at="2019-04-02T11:30:42Z" finished-at="2019-04-02T11:30:45Z">
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.qa.datc.testscript.CreateGroupRoleTest@610694f1]" name="closeApplication" is-config="true" duration-ms="2150" started-at="2019-04-03T17:06:26Z" finished-at="2019-04-03T17:06:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-        <test-method status="PASS" signature="publishReport()[pri:0, instance:com.qa.datc.testscript.Search@3701eaf6]" name="publishReport" is-config="true" duration-ms="370" started-at="2019-04-02T11:30:45Z" finished-at="2019-04-02T11:30:45Z">
+        <test-method status="PASS" signature="publishReport()[pri:0, instance:com.qa.datc.testscript.CreateGroupRoleTest@610694f1]" name="publishReport" is-config="true" duration-ms="305" started-at="2019-04-03T17:06:28Z" finished-at="2019-04-03T17:06:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- publishReport -->
-      </class> <!-- com.qa.datc.testscript.Search -->
+      </class> <!-- com.qa.datc.testscript.CreateGroupRoleTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

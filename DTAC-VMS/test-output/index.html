@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Mukul\AppData\Local\Temp\testng-eclipse-153094799\testng-customsuite.xml</span>
+                    <span>C:\Users\Mukul\AppData\Local\Temp\testng-eclipse--571738406\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qa.datc.testscript.Search" hash-for-method="searchRole">searchRole</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qa.datc.testscript.CreateGroupRoleTest" hash-for-method="testgrouprole">testgrouprole</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -120,22 +120,18 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.qa.datc.testscript.Search</span>
+              <span class="class-name">com.qa.datc.testscript.CreateGroupRoleTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="searchRole">
-                  </a> <!-- searchRole -->
-                  <span class="method-name">searchRole</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Role Type Name] but found [Role Type Code]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:189)
-	at org.testng.Assert.assertEquals(Assert.java:199)
-	at com.qa.datc.testscript.Search.searchRole(Search.java:34)
+                  <a name="testgrouprole">
+                  </a> <!-- testgrouprole -->
+                  <span class="method-name">testgrouprole</span>
+                  <div class="stack-trace">org.postgresql.util.PSQLException: The column name group_role_nam was not found in this ResultSet.
+	at org.postgresql.jdbc.PgResultSet.findColumn(PgResultSet.java:2593)
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2467)
+	at com.qa.datc.testscript.CreateGroupRoleTest.testgrouprole(CreateGroupRoleTest.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -170,7 +166,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Mukul\AppData\Local\Temp\testng-eclipse-153094799\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Mukul\AppData\Local\Temp\testng-eclipse--571738406\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -179,7 +175,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.qa.datc.testscript.Search&quot;/&gt;
+      &lt;class name=&quot;com.qa.datc.testscript.CreateGroupRoleTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -221,14 +217,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'searchRole')
-data.setCell(0, 2, 'com.qa.datc.testscript.Search')
-data.setCell(0, 3, 4400);
+data.setCell(0, 1, 'testgrouprole')
+data.setCell(0, 2, 'com.qa.datc.testscript.CreateGroupRoleTest')
+data.setCell(0, 3, 18558);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 18 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -254,40 +250,40 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.datc.testscript.Search</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.qa.datc.testscript.CreateGroupRoleTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">init</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">initGlobalVar</span>
-                <span class="method-start">307 ms</span>
+                <span class="method-start">323 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">initApplication(chrome)</span>
-                <span class="method-start">313 ms</span>
+                <span class="method-start">328 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">preCondtion(public void com.qa.datc.testscript.Search.searchRole() throws java.lang.InterruptedException)</span>
-                <span class="method-start">4980 ms</span>
+                <span class="method-name">preCondtion(public void com.qa.datc.testscript.CreateGroupRoleTest.testgrouprole() throws java.lang.InterruptedE...)</span>
+                <span class="method-start">4851 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">searchRole</span>
-                <span class="method-start">7451 ms</span>
+                <span class="method-name">testgrouprole</span>
+                <span class="method-start">7475 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">postCondition([TestResult name=searchRole status=FAILURE method=Search.searchRole()[pri:0, instance:com.qa.datc.te...)</span>
-                <span class="method-start">12301 ms</span>
+                <span class="method-name">postCondition([TestResult name=testgrouprole status=FAILURE method=CreateGroupRoleTest.testgrouprole()[pri:0, inst...)</span>
+                <span class="method-start">26039 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeApplication</span>
-                <span class="method-start">12725 ms</span>
+                <span class="method-start">26430 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">publishReport</span>
-                <span class="method-start">15130 ms</span>
+                <span class="method-start">28657 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -3,8 +3,9 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qa.datc.testscript.Search">
+      <class name="com.qa.datc.testscript.CreateGroupRoleTest">
         <methods>
+          <include name="testgrouprole"/>
           <include name="publishReport"/>
           <include name="initGlobalVar"/>
           <include name="closeApplication"/>
@@ -12,9 +13,8 @@
           <include name="initApplication"/>
           <include name="postCondition"/>
           <include name="init"/>
-          <include name="searchRole"/>
         </methods>
-      </class> <!-- com.qa.datc.testscript.Search -->
+      </class> <!-- com.qa.datc.testscript.CreateGroupRoleTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
