@@ -41,7 +41,10 @@ public class SearchGroupRole extends BasePage{
 	{
 		grouprole.click();
 	}
-	
+	public void a()
+	{
+		
+	}
 	public void Searchgroup()
 	{
 		searchgroup.click();
