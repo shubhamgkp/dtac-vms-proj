@@ -1,4 +1,4 @@
-package com.qa.datc.testscript;
+package com.create.testscript;
 
 import java.sql.SQLException;
 

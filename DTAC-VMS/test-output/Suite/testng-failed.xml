@@ -3,6 +3,42 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
+      <class name="com.qa.datc.testscript.Login_T">
+        <methods>
+          <include name="publishReport"/>
+          <include name="initGlobalVar"/>
+          <include name="closeApplication"/>
+          <include name="preCondtion"/>
+          <include name="initApplication"/>
+          <include name="postCondition"/>
+          <include name="init"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- com.qa.datc.testscript.Login_T -->
+      <class name="com.search.testscript.GroupSearch">
+        <methods>
+          <include name="publishReport"/>
+          <include name="initGlobalVar"/>
+          <include name="closeApplication"/>
+          <include name="testgrouproleSearch"/>
+          <include name="preCondtion"/>
+          <include name="initApplication"/>
+          <include name="postCondition"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.search.testscript.GroupSearch -->
+      <class name="com.search.testscript.GroupSearchValidation">
+        <methods>
+          <include name="publishReport"/>
+          <include name="initGlobalVar"/>
+          <include name="closeApplication"/>
+          <include name="preCondtion"/>
+          <include name="initApplication"/>
+          <include name="postCondition"/>
+          <include name="init"/>
+          <include name="testgrouproleSearch"/>
+        </methods>
+      </class> <!-- com.search.testscript.GroupSearchValidation -->
       <class name="com.qa.datc.testscript.Search">
         <methods>
           <include name="publishReport"/>
@@ -15,6 +51,30 @@
           <include name="searchRole"/>
         </methods>
       </class> <!-- com.qa.datc.testscript.Search -->
+      <class name="com.qa.datc.testscript.Search_Validations">
+        <methods>
+          <include name="publishReport"/>
+          <include name="initGlobalVar"/>
+          <include name="closeApplication"/>
+          <include name="preCondtion"/>
+          <include name="initApplication"/>
+          <include name="postCondition"/>
+          <include name="init"/>
+          <include name="searchRole"/>
+        </methods>
+      </class> <!-- com.qa.datc.testscript.Search_Validations -->
+      <class name="com.qa.datc.testscript.CreateRoleTestscript">
+        <methods>
+          <include name="publishReport"/>
+          <include name="initGlobalVar"/>
+          <include name="testRoleCreate"/>
+          <include name="closeApplication"/>
+          <include name="preCondtion"/>
+          <include name="initApplication"/>
+          <include name="postCondition"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.qa.datc.testscript.CreateRoleTestscript -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

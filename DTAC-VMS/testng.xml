@@ -3,9 +3,12 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
+      <class name="com.qa.datc.testscript.CreateGroupRoleTest"/>
       <class name="com.qa.datc.testscript.CreateRoleTestscript"/>
       <class name="com.qa.datc.testscript.Login_T"/>
       <class name="com.qa.datc.testscript.Search"/>
+      <class name="com.search.testscript.GroupSearchValidation"/>
+      <class name="com.search.testscript.GroupSearch"/>
       <class name="com.qa.datc.testscript.Search_Validations"/>
     </classes>
   </test> <!-- Test -->
