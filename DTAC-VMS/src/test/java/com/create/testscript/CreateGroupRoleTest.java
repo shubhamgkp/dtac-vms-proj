@@ -11,7 +11,7 @@ import com.qa.dtac.pages.CreateGroupRole;
 import com.qa.dtac.pages.LoginPage;
 
 public class CreateGroupRoleTest extends BaseTest {
-	@Test(invocationCount = 1)
+	@Test(invocationCount =10)
 	public void testgrouprole() throws InterruptedException, SQLException {
 		LoginPage lp = new LoginPage(driver);
 		lp.setLoginId("123");

@@ -74,7 +74,7 @@ public class Utility
 	}
 	}
 	public static String AlphaNumericString(int n) {
-		String AlphaNumericString = "AB" + "__" + "yz";
+		String AlphaNumericString = "ABCDEFGHIJLMNOPQRSTUVWXYZ" + "__" + "abcdefghijklmnopqrstuvwxyz";
 		StringBuilder sb = new StringBuilder(n);
 		for (int i = 0; i < n; i++) {
 			int index = (int) (AlphaNumericString.length() * Math.random());
@@ -86,7 +86,7 @@ public class Utility
 	
 	public static String getAlphaNumericString(int n) {
 
-		String AlphaNumericString = "AB" + "_____" + "ab";
+		String AlphaNumericString = "ABCDEFGHIJLMNOPQRSTUVWXYZ" + "___" + "abcdefghijklmnopqrstuvwxyz";
 
 		StringBuilder sb = new StringBuilder(n);
 

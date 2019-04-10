@@ -16,7 +16,7 @@ import com.qa.dtac.pages.LoginPage;
 public class CreateRoleTestscript extends BaseTest
 {
 	//String role_Name="";
-	@Test(invocationCount=1)
+	@Test(invocationCount=5)
 public void testRoleCreate() throws InterruptedException, IOException, SQLException {
 		
 		
@@ -35,7 +35,6 @@ public void testRoleCreate() throws InterruptedException, IOException, SQLExcept
 			CreateRoleType role = new CreateRoleType(driver);
 			role.RoleType();
 			role.CreateRole();
-			
 			role.RoleTypeCode(code);
 			
 			role.RoleTypeName(name);
