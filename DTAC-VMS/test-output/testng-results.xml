@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="73977" started-at="2019-04-09T11:56:17Z" finished-at="2019-04-09T11:57:31Z">
+  <suite name="Default suite" duration-ms="24974" started-at="2019-04-18T09:48:54Z" finished-at="2019-04-18T09:49:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="73977" started-at="2019-04-09T11:56:17Z" finished-at="2019-04-09T11:57:31Z">
-      <class name="com.create.testscript.CreateRoleTestscript">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.create.testscript.CreateRoleTestscript@3701eaf6]" name="init" is-config="true" duration-ms="309" started-at="2019-04-09T17:26:17Z" finished-at="2019-04-09T17:26:17Z">
+    <test name="Default test" duration-ms="24974" started-at="2019-04-18T09:48:54Z" finished-at="2019-04-18T09:49:19Z">
+      <class name="com.createinternaluser.CreateInternalUserWithValidData">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.createinternaluser.CreateInternalUserWithValidData@610694f1]" name="init" is-config="true" duration-ms="328" started-at="2019-04-18T15:18:54Z" finished-at="2019-04-18T15:18:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="initGlobalVar()[pri:0, instance:com.create.testscript.CreateRoleTestscript@3701eaf6]" name="initGlobalVar" is-config="true" duration-ms="2" started-at="2019-04-09T17:26:17Z" finished-at="2019-04-09T17:26:17Z">
+        <test-method status="PASS" signature="initGlobalVar()[pri:0, instance:com.createinternaluser.CreateInternalUserWithValidData@610694f1]" name="initGlobalVar" is-config="true" duration-ms="2" started-at="2019-04-18T15:18:54Z" finished-at="2019-04-18T15:18:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initGlobalVar -->
-        <test-method status="PASS" signature="initApplication(java.lang.String)[pri:0, instance:com.create.testscript.CreateRoleTestscript@3701eaf6]" name="initApplication" is-config="true" duration-ms="4560" started-at="2019-04-09T17:26:17Z" finished-at="2019-04-09T17:26:22Z">
+        <test-method status="PASS" signature="initApplication(java.lang.String)[pri:0, instance:com.createinternaluser.CreateInternalUserWithValidData@610694f1]" name="initApplication" is-config="true" duration-ms="4332" started-at="2019-04-18T15:18:54Z" finished-at="2019-04-18T15:18:58Z">
           <params>
             <param index="0">
               <value>
@@ -26,145 +26,41 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initApplication -->
-        <test-method status="PASS" signature="preCondtion(java.lang.reflect.Method)[pri:0, instance:com.create.testscript.CreateRoleTestscript@3701eaf6]" name="preCondtion" is-config="true" duration-ms="2574" started-at="2019-04-09T17:26:22Z" finished-at="2019-04-09T17:26:24Z">
+        <test-method status="PASS" signature="preCondtion(java.lang.reflect.Method)[pri:0, instance:com.createinternaluser.CreateInternalUserWithValidData@610694f1]" name="preCondtion" is-config="true" duration-ms="2618" started-at="2019-04-18T15:18:58Z" finished-at="2019-04-18T15:19:01Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.create.testscript.CreateRoleTestscript.testRoleCreate() throws java.lang.InterruptedException,java.io.IOException,java.sql.SQLException]]>
+                <![CDATA[public void com.createinternaluser.CreateInternalUserWithValidData.testCreateInternalUserWithValidData() throws java.lang.InterruptedException,java.sql.SQLException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preCondtion -->
-        <test-method status="PASS" signature="testRoleCreate()[pri:0, instance:com.create.testscript.CreateRoleTestscript@3701eaf6]" name="testRoleCreate" duration-ms="13393" started-at="2019-04-09T17:26:24Z" finished-at="2019-04-09T17:26:38Z">
+        <test-method status="PASS" signature="testCreateInternalUserWithValidData()[pri:0, instance:com.createinternaluser.CreateInternalUserWithValidData@610694f1]" name="testCreateInternalUserWithValidData" duration-ms="17824" started-at="2019-04-18T15:19:01Z" finished-at="2019-04-18T15:19:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testRoleCreate -->
-        <test-method status="PASS" signature="postCondition(org.testng.ITestResult)[pri:0, instance:com.create.testscript.CreateRoleTestscript@3701eaf6]" name="postCondition" is-config="true" duration-ms="3" started-at="2019-04-09T17:26:38Z" finished-at="2019-04-09T17:26:38Z">
+        </test-method> <!-- testCreateInternalUserWithValidData -->
+        <test-method status="PASS" signature="postCondition(org.testng.ITestResult)[pri:0, instance:com.createinternaluser.CreateInternalUserWithValidData@610694f1]" name="postCondition" is-config="true" duration-ms="5" started-at="2019-04-18T15:19:19Z" finished-at="2019-04-18T15:19:19Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testRoleCreate status=SUCCESS method=CreateRoleTestscript.testRoleCreate()[pri:0, instance:com.create.testscript.CreateRoleTestscript@3701eaf6] output={null}]]]>
+                <![CDATA[[TestResult name=testCreateInternalUserWithValidData status=SUCCESS method=CreateInternalUserWithValidData.testCreateInternalUserWithValidData()[pri:0, instance:com.createinternaluser.CreateInternalUserWithValidData@610694f1] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
-        <test-method status="PASS" signature="preCondtion(java.lang.reflect.Method)[pri:0, instance:com.create.testscript.CreateRoleTestscript@3701eaf6]" name="preCondtion" is-config="true" duration-ms="173" started-at="2019-04-09T17:26:38Z" finished-at="2019-04-09T17:26:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.create.testscript.CreateRoleTestscript.testRoleCreate() throws java.lang.InterruptedException,java.io.IOException,java.sql.SQLException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preCondtion -->
-        <test-method status="PASS" signature="testRoleCreate()[pri:0, instance:com.create.testscript.CreateRoleTestscript@3701eaf6]" name="testRoleCreate" duration-ms="12646" started-at="2019-04-09T17:26:38Z" finished-at="2019-04-09T17:26:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRoleCreate -->
-        <test-method status="PASS" signature="postCondition(org.testng.ITestResult)[pri:0, instance:com.create.testscript.CreateRoleTestscript@3701eaf6]" name="postCondition" is-config="true" duration-ms="1" started-at="2019-04-09T17:26:51Z" finished-at="2019-04-09T17:26:51Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testRoleCreate status=SUCCESS method=CreateRoleTestscript.testRoleCreate()[pri:0, instance:com.create.testscript.CreateRoleTestscript@3701eaf6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postCondition -->
-        <test-method status="PASS" signature="preCondtion(java.lang.reflect.Method)[pri:0, instance:com.create.testscript.CreateRoleTestscript@3701eaf6]" name="preCondtion" is-config="true" duration-ms="78" started-at="2019-04-09T17:26:51Z" finished-at="2019-04-09T17:26:51Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.create.testscript.CreateRoleTestscript.testRoleCreate() throws java.lang.InterruptedException,java.io.IOException,java.sql.SQLException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preCondtion -->
-        <test-method status="PASS" signature="testRoleCreate()[pri:0, instance:com.create.testscript.CreateRoleTestscript@3701eaf6]" name="testRoleCreate" duration-ms="12908" started-at="2019-04-09T17:26:51Z" finished-at="2019-04-09T17:27:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRoleCreate -->
-        <test-method status="PASS" signature="postCondition(org.testng.ITestResult)[pri:0, instance:com.create.testscript.CreateRoleTestscript@3701eaf6]" name="postCondition" is-config="true" duration-ms="1" started-at="2019-04-09T17:27:04Z" finished-at="2019-04-09T17:27:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testRoleCreate status=SUCCESS method=CreateRoleTestscript.testRoleCreate()[pri:0, instance:com.create.testscript.CreateRoleTestscript@3701eaf6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postCondition -->
-        <test-method status="PASS" signature="preCondtion(java.lang.reflect.Method)[pri:0, instance:com.create.testscript.CreateRoleTestscript@3701eaf6]" name="preCondtion" is-config="true" duration-ms="86" started-at="2019-04-09T17:27:04Z" finished-at="2019-04-09T17:27:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.create.testscript.CreateRoleTestscript.testRoleCreate() throws java.lang.InterruptedException,java.io.IOException,java.sql.SQLException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preCondtion -->
-        <test-method status="PASS" signature="testRoleCreate()[pri:0, instance:com.create.testscript.CreateRoleTestscript@3701eaf6]" name="testRoleCreate" duration-ms="12740" started-at="2019-04-09T17:27:04Z" finished-at="2019-04-09T17:27:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRoleCreate -->
-        <test-method status="PASS" signature="postCondition(org.testng.ITestResult)[pri:0, instance:com.create.testscript.CreateRoleTestscript@3701eaf6]" name="postCondition" is-config="true" duration-ms="1" started-at="2019-04-09T17:27:16Z" finished-at="2019-04-09T17:27:16Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testRoleCreate status=SUCCESS method=CreateRoleTestscript.testRoleCreate()[pri:0, instance:com.create.testscript.CreateRoleTestscript@3701eaf6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postCondition -->
-        <test-method status="PASS" signature="preCondtion(java.lang.reflect.Method)[pri:0, instance:com.create.testscript.CreateRoleTestscript@3701eaf6]" name="preCondtion" is-config="true" duration-ms="78" started-at="2019-04-09T17:27:16Z" finished-at="2019-04-09T17:27:17Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.create.testscript.CreateRoleTestscript.testRoleCreate() throws java.lang.InterruptedException,java.io.IOException,java.sql.SQLException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preCondtion -->
-        <test-method status="PASS" signature="testRoleCreate()[pri:0, instance:com.create.testscript.CreateRoleTestscript@3701eaf6]" name="testRoleCreate" duration-ms="12602" started-at="2019-04-09T17:27:17Z" finished-at="2019-04-09T17:27:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRoleCreate -->
-        <test-method status="PASS" signature="postCondition(org.testng.ITestResult)[pri:0, instance:com.create.testscript.CreateRoleTestscript@3701eaf6]" name="postCondition" is-config="true" duration-ms="2" started-at="2019-04-09T17:27:29Z" finished-at="2019-04-09T17:27:29Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testRoleCreate status=SUCCESS method=CreateRoleTestscript.testRoleCreate()[pri:0, instance:com.create.testscript.CreateRoleTestscript@3701eaf6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postCondition -->
-        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.create.testscript.CreateRoleTestscript@3701eaf6]" name="closeApplication" is-config="true" duration-ms="2066" started-at="2019-04-09T17:27:29Z" finished-at="2019-04-09T17:27:31Z">
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.createinternaluser.CreateInternalUserWithValidData@610694f1]" name="closeApplication" is-config="true" duration-ms="172" started-at="2019-04-18T15:19:19Z" finished-at="2019-04-18T15:19:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-        <test-method status="PASS" signature="publishReport()[pri:0, instance:com.create.testscript.CreateRoleTestscript@3701eaf6]" name="publishReport" is-config="true" duration-ms="461" started-at="2019-04-09T17:27:31Z" finished-at="2019-04-09T17:27:32Z">
+        <test-method status="PASS" signature="publishReport()[pri:0, instance:com.createinternaluser.CreateInternalUserWithValidData@610694f1]" name="publishReport" is-config="true" duration-ms="340" started-at="2019-04-18T15:19:19Z" finished-at="2019-04-18T15:19:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- publishReport -->
-      </class> <!-- com.create.testscript.CreateRoleTestscript -->
+      </class> <!-- com.createinternaluser.CreateInternalUserWithValidData -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

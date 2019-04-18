@@ -3,18 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.create.testscript.CreateGroupRoleTest">
+      <class name="com.createinternaluser.CreateInternalUserWith_InvalidData">
         <methods>
           <include name="publishReport"/>
           <include name="initGlobalVar"/>
           <include name="closeApplication"/>
+          <include name="testCreateInternalUserWith_InvalidData"/>
           <include name="preCondtion"/>
           <include name="initApplication"/>
           <include name="postCondition"/>
-          <include name="testgrouprole"/>
           <include name="init"/>
         </methods>
-      </class> <!-- com.create.testscript.CreateGroupRoleTest -->
+      </class> <!-- com.createinternaluser.CreateInternalUserWith_InvalidData -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

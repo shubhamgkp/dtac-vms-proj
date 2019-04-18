@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
@@ -36,7 +37,7 @@ public class BaseTest implements AutomationConstants
 	public static long eTimeout;
 	public static ExtentReports eReport;
 	
-	public boolean loginRequired=false;
+	public boolean loginRequired=true;
 	public boolean logoutRequired=false;
 	
 	
@@ -72,8 +73,8 @@ public class BaseTest implements AutomationConstants
 		{
 			log.info(" browser "+browser+" opening...");
 			System.setProperty(CHROME_KEY, CHROME_VALUE);
-			/* headless Browser
-			  ChromeOptions options = new ChromeOptions();
+			// headless Browser
+			  /*ChromeOptions options = new ChromeOptions();
 			  options.addArguments("window-size=1400,800");
 			  options.addArguments("headless");
 			  driver = new ChromeDriver(options);*/
@@ -101,7 +102,9 @@ public class BaseTest implements AutomationConstants
 			try
 			{
 				LoginPage l=new LoginPage(driver);
-				//l.login(un,pw);
+				l.setLoginId("123");
+				l.setLoginPass("123");
+				l.setLoginButtonClick();
 
 			}
 			catch(Exception e)

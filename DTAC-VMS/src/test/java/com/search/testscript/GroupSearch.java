@@ -14,7 +14,7 @@ import com.qa.dtac.pages.SearchGroupRole;
 
 public class GroupSearch extends BaseTest {
 	
-	@Test(invocationCount = 1)
+	@Test
 	public void testgrouproleSearch() throws InterruptedException, SQLException {
 		LoginPage lp = new LoginPage(driver);
 		lp.setLoginId("123");

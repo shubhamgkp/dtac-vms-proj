@@ -17,7 +17,7 @@ public class SearchGroupRole extends BasePage{
 	@FindBy(xpath="//span[text()='Group Role']")
 	WebElement grouprole;
 	
-	@FindBy(xpath="//a[text()='Search Group Type']")
+	@FindBy(xpath="//a[text()='Search Group Role']")
 	WebElement searchgroup;
 	
 	@FindBy(xpath="//select[@formcontrolname='roleTypeCode']")

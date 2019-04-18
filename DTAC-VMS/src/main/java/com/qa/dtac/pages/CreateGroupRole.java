@@ -21,7 +21,7 @@ public class CreateGroupRole extends BasePage {
 	@FindBy(xpath="//span[text()='Group Role']")
 	WebElement grouprole;
 	
-	@FindBy(xpath="//a[text()='Create Group Type']")
+	@FindBy(xpath="//a[text()='Create Group Role']")
 	WebElement creategrouptype;
 	
 	@FindBy(xpath="//select[@formcontrolname='roleTypeCode']")
@@ -42,7 +42,9 @@ public class CreateGroupRole extends BasePage {
 		
 		return rolesrights;
 	}*/
-	@FindBy(xpath="//div[@_ngcontent-c2='']//div[@class='ng-untouched ng-pristine ng-valid']//label[contains(text(),'role')]")
+	//@FindBy(xpath="//div[@_ngcontent-c2='']//div[@class='ng-untouched ng-pristine ng-valid']//label[contains(text(),'role')]")
+	//@FindBy(xpath="//input[@class='ng-untouched ng-pristine']")
+	@FindBy(xpath="//input[@type='checkbox']")
 	List<WebElement> rolesrights;
 	
 	@FindBy(xpath="//button[text()='Submit']")
@@ -83,10 +85,11 @@ public class CreateGroupRole extends BasePage {
 	public void rights() throws InterruptedException
 	{
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		WebElement element = driver.findElement(By.xpath("//div[@_ngcontent-c2='']//div[@class='ng-untouched ng-pristine ng-valid']//label[contains(text(),'role')]"));
+		WebElement element = driver.findElement(By.xpath("//input[@type='checkbox']"));
 		js.executeScript("arguments[0].scrollIntoView();", element);
-		rolesrights.get(1).click();
+		rolesrights.get(0).click();
 		rolesrights.get(2).click();
+		rolesrights.get(4).click();
 	}
 	public void submit() throws InterruptedException
 	{

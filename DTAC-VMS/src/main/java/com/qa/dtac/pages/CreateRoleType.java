@@ -59,6 +59,8 @@ public class CreateRoleType extends BasePage{
 
 	public void RList() {
 		roleList.get(3).click();
+		roleList.get(2).click();
+		roleList.get(5).click();
 	}
 
 	public void Button() {
