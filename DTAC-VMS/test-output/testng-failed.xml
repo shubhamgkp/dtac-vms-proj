@@ -3,18 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.createinternaluser.CreateInternalUserWith_InvalidData">
+      <class name="com.createinternaluser.CreateInternalUserWithValidData">
         <methods>
+          <include name="testCreateInternalUserWithValidData"/>
           <include name="publishReport"/>
           <include name="initGlobalVar"/>
           <include name="closeApplication"/>
-          <include name="testCreateInternalUserWith_InvalidData"/>
           <include name="preCondtion"/>
           <include name="initApplication"/>
           <include name="postCondition"/>
           <include name="init"/>
         </methods>
-      </class> <!-- com.createinternaluser.CreateInternalUserWith_InvalidData -->
+      </class> <!-- com.createinternaluser.CreateInternalUserWithValidData -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

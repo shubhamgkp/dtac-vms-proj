@@ -11,7 +11,7 @@ import com.qa.dtac.pages.CreateInternalUserPage;
 public class CreateInternalUserWithValidData  extends BaseTest
 {
 	String loginNames;
-	@Test
+	@Test(invocationCount = 12)
 	public void  testCreateInternalUserWithValidData() throws InterruptedException, SQLException
 	{
 		String loginName=Utility.randomString(7);
